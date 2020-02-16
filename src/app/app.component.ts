@@ -30,6 +30,6 @@ export class AppComponent {
     const numpadRef = this.numpad.open(this.form.value);
     numpadRef
       .afterClosed()
-      .subscribe(result => result && (this.value = result));
+      .subscribe(result => result !== undefined && this.form.get("value").setValue(result));
   }
 }

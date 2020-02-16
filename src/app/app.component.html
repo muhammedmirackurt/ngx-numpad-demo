@@ -1,55 +1,58 @@
-<div>
+<h1>ngx-numpad Demo</h1>
+<hr>
+<button (click)="open()">Open Numpad</button>
+<div class="config-wrapper">
   <h1>Config</h1>
   <section>
     <label>value:</label>
-    <input type="text" [formControl]="form.get('value')">
+    <input type="text" [formControl]="form.get('value')" />
   </section>
   <section>
     <label>prefix:</label>
-    <input type="text" [formControl]="form.get('prefix')">
+    <input type="text" [formControl]="form.get('prefix')" />
   </section>
   <section>
     <label>suffix:</label>
-    <input type="text" [formControl]="form.get('suffix')">
+    <input type="text" [formControl]="form.get('suffix')" />
   </section>
   <section>
     <label>cantDecimal:</label>
-    <input type="text" [formControl]="form.get('cantDecimal')">
+    <input type="checkbox" [formControl]="form.get('cantDecimal')" />
   </section>
   <section>
     <label>cantZero:</label>
-    <input type="text" [formControl]="form.get('cantZero')">
+    <input type="checkbox" [formControl]="form.get('cantZero')" />
   </section>
   <section>
     <label>max:</label>
-    <input type="number" [formControl]="form.get('max')">
+    <input type="number" [formControl]="form.get('max')" />
   </section>
   <section>
     <label>min:</label>
-    <input type="number" [formControl]="form.get('min')">
+    <input type="number" [formControl]="form.get('min')" />
   </section>
   <section>
     <label>decimalSeparator:</label>
-    <input type="text" [formControl]="form.get('decimalSeparator')">
+    <input type="text" [formControl]="form.get('decimalSeparator')" />
   </section>
   <section>
     <label>thousandsSeparator:</label>
-    <input type="text" [formControl]="form.get('thousandsSeparator')">
+    <input type="text" [formControl]="form.get('thousandsSeparator')" />
   </section>
   <section>
     <label>disableOtherButtons:</label>
-    <input type="text" [formControl]="form.get('disableOtherButtons')">
+    <input type="checkbox" [formControl]="form.get('disableOtherButtons')" />
   </section>
   <section>
     <label>onlyNegative:</label>
-    <input type="text" [formControl]="form.get('onlyNegative')">
+    <input type="checkbox" [formControl]="form.get('onlyNegative')" />
   </section>
   <section>
     <label>onlyPositive:</label>
-    <input type="text" [formControl]="form.get('onlyPositive')">
+    <input type="checkbox" [formControl]="form.get('onlyPositive')" />
   </section>
   <section>
     <label>scale:</label>
-    <input type="text" [formControl]="form.get('scale')">
+    <input type="text" [formControl]="form.get('scale')" />
   </section>
 </div>
